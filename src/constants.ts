@@ -33,10 +33,10 @@ export const PROJECTS: Project[] = [
     id: 'app-1',
     title: 'Gestor de Inventario Simple',
     category: 'Apps',
-    image: proyecto1,   // ← AQUÍ YA FUNCIONA TU IMAGEN LOCAL
-    description: 'Una aplicación móvil ligera para el control de stock en tiempo real.',
-    problem: 'El cliente perdía horas contando productos manualmente en una hoja de cálculo propensa a errores.',
-    solution: 'Desarrollamos una app intuitiva con escaneo de códigos de barras que sincroniza el inventario al instante.',
+    image: proyecto1,
+    description: 'Una aplicación de escritorio y móvil para aquellos documentos repetitivos.',
+    problem: 'El cliente perdía horas llevando a cabo el mismo documento cambiando algunos datos.',
+    solution: 'Desarrollamos una app intuitiva con un pequeño formulario el cual, una vez cumplimentado, generaba el archivo y, además se guardaba en una BB.DD.',
   },
   {
     id: 'auto-1',
