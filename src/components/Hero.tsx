@@ -3,9 +3,8 @@ import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
 import { WHATSAPP_NUMBER, WHATSAPP_MESSAGE } from '../constants';
 
-/ Importa tu logotipo
-import logo from '../assets/entre2_Digital.jpg'; // <-- cambia el nombre según tu archivo real
-
+// Importa tu logotipo
+import logo from '../assets/entre2_Digital.jpg';
 
 export default function Hero() {
   const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
@@ -26,16 +25,18 @@ export default function Hero() {
             <span className="inline-block px-4 py-1.5 mb-6 text-xs font-semibold tracking-widest uppercase bg-earth-900/5 text-earth-800 rounded-full">
               Entredos Digital
             </span>
+
             <h1 className="text-5xl md:text-7xl font-serif leading-[1.1] mb-6 text-earth-900">
               Soluciones digitales <br />
               <span className="italic">sencillas</span> para emprendedores
             </h1>
+
             <p className="text-lg md:text-xl text-earth-800/70 mb-10 leading-relaxed max-w-2xl">
-              Webs, Apps y Automatizaciones sin complicaciones. 
+              Webs, Apps y Automatizaciones sin complicaciones.
               Ayudamos a que tu negocio crezca con herramientas digitales elegantes y efectivas.
             </p>
 
-
+            {/* Logotipo añadido */}
             <motion.img
               src={logo}
               alt="Logotipo Entredos Digital"
@@ -45,7 +46,6 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.2 }}
             />
 
-            
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href={whatsappUrl}
@@ -56,6 +56,7 @@ export default function Hero() {
                 Hablemos
                 <ArrowRight className="ml-2" size={18} />
               </a>
+
               <a
                 href="#proyectos"
                 className="inline-flex items-center justify-center px-8 py-4 border border-earth-900/20 text-earth-900 rounded-full font-medium transition-all hover:bg-earth-900/5"
