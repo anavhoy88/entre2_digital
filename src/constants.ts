@@ -104,7 +104,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 'design-4',
-    title: '',
+    title: 'Menú de bienvenida',
     category: 'Diseño',
     image: diseno4,
     description: 'Menú ilustrado para la copa de bienvenida de un evento, con estética elegante y botánica.',
