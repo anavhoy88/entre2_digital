@@ -10,7 +10,20 @@ export default function Hero() {
   const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
 
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-beige-100">
+    <section
+      id="inicio"
+      className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-beige-100"
+    >
+      {/* Marca de agua */}
+      <motion.img
+        src={logo}
+        alt="Marca de agua Entredos Digital"
+        className="absolute inset-0 m-auto w-[70%] max-w-3xl opacity-[0.06] pointer-events-none select-none"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 0.06 }}
+        transition={{ duration: 1.2 }}
+      />
+
       {/* Decorative elements */}
       <div className="absolute top-[-10%] right-[-10%] w-[500px] h-[500px] bg-beige-200 rounded-full blur-3xl opacity-50" />
       <div className="absolute bottom-[-10%] left-[-10%] w-[400px] h-[400px] bg-beige-200 rounded-full blur-3xl opacity-50" />
@@ -32,19 +45,8 @@ export default function Hero() {
             </h1>
 
             <p className="text-lg md:text-xl text-earth-800/70 mb-10 leading-relaxed max-w-2xl">
-              Webs, Apps y Automatizaciones sin complicaciones.
-              Ayudamos a que tu negocio crezca con herramientas digitales elegantes y efectivas.
+              Webs, Apps y Automatizaciones sin complicaciones. Ayudamos a que tu negocio crezca con herramientas digitales elegantes y efectivas.
             </p>
-
-            {/* Logotipo añadido */}
-            <motion.img
-              src={logo}
-              alt="Logotipo Entredos Digital"
-              className="w-48 mb-10 opacity-90"
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-            />
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a
