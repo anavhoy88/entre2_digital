@@ -59,7 +59,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 'auto-2',
-    title: 'Reportes Autom',
+    title: 'Telegram + Google Sheets',
     category: 'Automatizaciones',
     image: auto2,
     description: 'A través de Telegram, controla tus gastos en tres click.',
