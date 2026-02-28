@@ -95,7 +95,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 'design-3',
-    title: 'Identidad Visual "Terra"',
+    title: 'Cartel de bienvenida personalizado',
     category: 'Diseño',
     image: diseno3,
     description: 'Cartel de bienvenida personalizado para bodas con estética elegante y musical.',
