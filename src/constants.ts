@@ -1,5 +1,6 @@
 import { Project, Service } from './types';
 import proyecto1 from './assets/app1.png';
+import proyecto2 from './assets/automatizaciones1.png';
 
 export const SERVICES: Service[] = [
   {
@@ -31,21 +32,21 @@ export const SERVICES: Service[] = [
 export const PROJECTS: Project[] = [
   {
     id: 'app-1',
-    title: 'Gestor de Inventario Simple',
+    title: 'Gestor de Documentos repetitivos',
     category: 'Apps',
     image: proyecto1,
     description: 'Una aplicación de escritorio y móvil para aquellos documentos repetitivos.',
     problem: 'El cliente perdía horas llevando a cabo el mismo documento cambiando algunos datos.',
-    solution: 'Desarrollamos una app intuitiva con un pequeño formulario el cual, una vez cumplimentado, generaba el archivo y, además se guardaba en una BB.DD.',
+    solution: 'Desarrollamos una app intuitiva con un pequeño formulario el cual, una vez cumplimentado, se genera el archivo y además, se guarda en una BB.DD. para poder reutilizarlo si fuese necesario.',
   },
   {
     id: 'auto-1',
-    title: 'Sincronización CRM-Email',
+    title: 'Control de facturación de casa',
     category: 'Automatizaciones',
-    image: 'https://images.unsplash.com/photo-1518433278981-1127cc340b09?q=80&w=1000&auto=format&fit=crop',
-    description: 'Flujo de trabajo automatizado entre captación de leads y respuesta por correo.',
-    problem: 'Los nuevos contactos tardaban hasta 24 horas en recibir una respuesta, perdiendo interés.',
-    solution: 'Implementamos un escenario en Make que envía un dossier personalizado en menos de 5 minutos tras el registro.',
+    image: proyecto2,
+    description: 'Flujo de trabajo automatizado para el control de facturas de luz, gas y agua.',
+    problem: 'Recibes facturas de luz, agua o gas y no sabes qué hacer con ellas, no llevas el control de gasto.',
+    solution: 'Implementamos un escenario en Make que envía el precio de la factura a un Excel para llevar el control total de las facturas.',
   },
   {
     id: 'auto-2',
