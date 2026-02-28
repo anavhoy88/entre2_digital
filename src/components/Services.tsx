@@ -3,9 +3,6 @@ import { motion } from 'motion/react';
 import { Globe, Smartphone, Zap, Palette } from 'lucide-react';
 import { SERVICES } from '../constants';
 
-// Importa tu logotipo
-import logo from '../assets/entre2_Digital.jpg';
-
 const icons: Record<string, React.ReactNode> = {
   Globe: <Globe size={32} strokeWidth={1.5} />,
   Smartphone: <Smartphone size={32} strokeWidth={1.5} />,
@@ -15,20 +12,8 @@ const icons: Record<string, React.ReactNode> = {
 
 export default function Services() {
   return (
-    <section id="servicios" className="relative py-24 bg-beige-50 overflow-hidden">
-
-      {/* Marca de agua */}
-      <motion.img
-        src={logo}
-        alt="Marca de agua Entredos Digital"
-        className="absolute inset-0 m-auto w-[65%] max-w-3xl opacity-[0.05] pointer-events-none select-none"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 0.05 }}
-        viewport={{ once: true }}
-        transition={{ duration: 1.2 }}
-      />
-
-      <div className="relative z-10 max-w-7xl mx-auto px-6">
+    <section id="servicios" className="py-24 bg-beige-50">
+      <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-20">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
