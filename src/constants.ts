@@ -33,7 +33,7 @@ export const PROJECTS: Project[] = [
     id: 'app-1',
     title: 'Gestor de Inventario Simple',
     category: 'Apps',
-    image: 'proyecto1',
+    image: proyecto1,   // ← AQUÍ YA FUNCIONA TU IMAGEN LOCAL
     description: 'Una aplicación móvil ligera para el control de stock en tiempo real.',
     problem: 'El cliente perdía horas contando productos manualmente en una hoja de cálculo propensa a errores.',
     solution: 'Desarrollamos una app intuitiva con escaneo de códigos de barras que sincroniza el inventario al instante.',
@@ -85,5 +85,5 @@ export const PROJECTS: Project[] = [
   },
 ];
 
-export const WHATSAPP_NUMBER = '34600000000'; // Placeholder
+export const WHATSAPP_NUMBER = '34600000000';
 export const WHATSAPP_MESSAGE = 'Hola Entredos Digital, me gustaría obtener más información sobre vuestros servicios.';
