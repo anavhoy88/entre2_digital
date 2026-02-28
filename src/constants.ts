@@ -1,7 +1,7 @@
 import { Project, Service } from './types';
 import proyecto1 from './assets/app1.png';
 import proyecto2 from './assets/automatizaciones1.png';
-import proyecto3 from './assets/automatizaciones1.png';
+import proyecto3 from './assets/automatizaciones2.png';
 import proyecto4 from './assets/boda1.png';
 
 export const SERVICES: Service[] = [
