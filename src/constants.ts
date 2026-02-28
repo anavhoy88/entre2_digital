@@ -1,12 +1,15 @@
 import { Project, Service } from './types';
 import proyecto1 from './assets/app1.png';
-import proyecto2 from './assets/automatizaciones1.png';
-import proyecto3 from './assets/automatizaciones2.png';
-import proyecto4 from './assets/boda1.png';
-import proyecto1 from './assets/diseno1.png';
-import proyecto1 from './assets/diseno2.png';
-import proyecto1 from './assets/diseno3.png';
-import proyecto1 from './assets/diseno4.png';
+
+import auto1 from './assets/automatizaciones1.png';
+import auto2 from './assets/automatizaciones2.png';
+
+import web1 from './assets/boda1.png';
+
+import diseno1 from './assets/diseno1.png';
+import diseno2 from './assets/diseno2.png';
+import diseno3 from './assets/diseno3.png';
+import diseno4 from './assets/diseno4.png';
 
 export const SERVICES: Service[] = [
   {
@@ -49,7 +52,7 @@ export const PROJECTS: Project[] = [
     id: 'auto-1',
     title: 'Control de gasto automático',
     category: 'Automatizaciones',
-    image: proyecto2,
+    image: auto1,
     description: 'Flujo de trabajo automatizado para el control de facturas de luz, gas y agua.',
     problem: 'Recibes facturas de luz, agua o gas y no sabes qué hacer con ellas, no llevas el control de gasto.',
     solution: 'Implementamos un escenario en Make que envía el precio de la factura a un Excel para llevar el control total de las facturas.',
@@ -58,7 +61,7 @@ export const PROJECTS: Project[] = [
     id: 'auto-2',
     title: 'Reportes Autom',
     category: 'Automatizaciones',
-    image: proyecto3,
+    image: auto2,
     description: 'A través de Telegram, controla tus gastos en tres click.',
     problem: 'Pérdida de control de gastos "hormiga".',
     solution: 'Gestionamos una automatización entre Telegram y Google Sheets para agregar el control diario en tres interacciones.',
@@ -67,7 +70,7 @@ export const PROJECTS: Project[] = [
     id: 'web-1',
     title: 'Boda de Rocío & Carlos',
     category: 'Web',
-    image: proyecto4,
+    image: web1,
     description: 'Landing page elegante para la gestión de invitados y detalles del evento.',
     problem: 'Dificultad para centralizar confirmaciones de asistencia y alergias alimentarias.',
     solution: 'Web minimalista con formulario integrado y cuenta atrás, facilitando la organización a los novios.',
