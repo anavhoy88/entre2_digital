@@ -35,6 +35,17 @@ export default function Hero() {
               Ayudamos a que tu negocio crezca con herramientas digitales elegantes y efectivas.
             </p>
 
+
+            <motion.img
+              src={logo}
+              alt="Logotipo Entredos Digital"
+              className="w-48 mb-10 opacity-90"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            />
+
+            
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href={whatsappUrl}
