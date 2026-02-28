@@ -113,5 +113,5 @@ export const PROJECTS: Project[] = [
   },
 ];
 
-export const WHATSAPP_NUMBER = '34600000000';
+export const WHATSAPP_NUMBER = '34661226784';
 export const WHATSAPP_MESSAGE = 'Hola Entredos Digital, me gustaría obtener más información sobre vuestros servicios.';
