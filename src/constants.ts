@@ -3,6 +3,10 @@ import proyecto1 from './assets/app1.png';
 import proyecto2 from './assets/automatizaciones1.png';
 import proyecto3 from './assets/automatizaciones2.png';
 import proyecto4 from './assets/boda1.png';
+import proyecto1 from './assets/diseno1.png';
+import proyecto1 from './assets/diseno2.png';
+import proyecto1 from './assets/diseno3.png';
+import proyecto1 from './assets/diseno4.png';
 
 export const SERVICES: Service[] = [
   {
@@ -70,21 +74,39 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 'design-1',
-    title: 'Identidad Visual "Terra"',
+    title: 'Invitación de boda digital o impresa',
     category: 'Diseño',
-    image: 'https://images.unsplash.com/photo-1586717791821-3f44a563eb4c?q=80&w=1000&auto=format&fit=crop',
-    description: 'Branding completo para una marca de cerámica artesanal.',
-    problem: 'La marca carecía de una imagen coherente que reflejara su proceso orgánico.',
-    solution: 'Logotipo y paleta de colores tierra que transmiten calma y autenticidad.',
+    image: diseno1,
+    description: 'Invitación de boda para imprimir o digital para enviar por WhatsApp',
+    problem: 'No sabes cómo llevar a cabo la invitaciones de tu boda.',
+    solution: 'Creamos una elegante e interactiva invitación de boda con acceso a tu web para que tus invitados confirme la asistencia y reciban todo tipo de información.',
   },
   {
     id: 'design-2',
     title: 'Parche Militar "Vanguard"',
     category: 'Diseño',
-    image: 'https://images.unsplash.com/photo-1590548784585-643d2b9f2925?q=80&w=1000&auto=format&fit=crop',
+    image: diseno2,
     description: 'Diseño de parche redondo bordado para unidad táctica.',
     problem: 'Necesidad de un emblema que fuera legible en pequeño y representara fuerza.',
     solution: 'Diseño circular minimalista con tipografía robusta y elementos icónicos simplificados.',
+  },
+  {
+    id: 'design-3',
+    title: 'Identidad Visual "Terra"',
+    category: 'Diseño',
+    image: diseno3,
+    description: 'Cartel de bienvenida personalizado para bodas con estética elegante y musical.',
+    problem: 'Las parejas buscaban una pieza decorativa que reflejara su estilo y diera cohesión a la entrada del evento.',
+    solution: 'Diseño sofisticado en tonos oscuros y dorados, con tipografía cuidada y motivos musicales que aportan identidad y calidez desde el primer momento.',
+  },
+  {
+    id: 'design-4',
+    title: '',
+    category: 'Diseño',
+    image: diseno4,
+    description: 'Menú ilustrado para la copa de bienvenida de un evento, con estética elegante y botánica.',
+    problem: 'Los anfitriones necesitaban presentar la oferta gastronómica de forma clara y atractiva, acorde al estilo de la celebración.',
+    solution: 'Diseño refinado con tipografía cuidada e ilustraciones naturales que elevan la experiencia y aportan coherencia visual al evento.',
   },
 ];
 
