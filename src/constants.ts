@@ -1,4 +1,5 @@
 import { Project, Service } from './types';
+import proyecto1 from './assets/app1.png';
 
 export const SERVICES: Service[] = [
   {
@@ -32,7 +33,7 @@ export const PROJECTS: Project[] = [
     id: 'app-1',
     title: 'Gestor de Inventario Simple',
     category: 'Apps',
-    image: 'https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?q=80&w=1000&auto=format&fit=crop',
+    image: 'proyecto1',
     description: 'Una aplicación móvil ligera para el control de stock en tiempo real.',
     problem: 'El cliente perdía horas contando productos manualmente en una hoja de cálculo propensa a errores.',
     solution: 'Desarrollamos una app intuitiva con escaneo de códigos de barras que sincroniza el inventario al instante.',
