@@ -3,6 +3,10 @@ import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
 import { WHATSAPP_NUMBER, WHATSAPP_MESSAGE } from '../constants';
 
+/ Importa tu logotipo
+import logo from '../assets/entre2_Digital.jpg'; // <-- cambia el nombre según tu archivo real
+
+
 export default function Hero() {
   const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`;
 
