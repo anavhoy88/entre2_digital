@@ -3,6 +3,9 @@ import { motion } from 'motion/react';
 import { Globe, Smartphone, Zap, Palette } from 'lucide-react';
 import { SERVICES } from '../constants';
 
+// Importa tu logotipo
+import logo from '../assets/entre2_Digital.jpg';
+
 const icons: Record<string, React.ReactNode> = {
   Globe: <Globe size={32} strokeWidth={1.5} />,
   Smartphone: <Smartphone size={32} strokeWidth={1.5} />,
@@ -21,7 +24,7 @@ export default function Services() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-4xl md:text-5xl mb-4">Qué hago</h2>
+            <h2 className="text-4xl md:text-5xl mb-4">Qué hacemos</h2>
             <div className="w-20 h-0.5 bg-earth-900/10 mx-auto mb-6" />
             <p className="text-earth-800/60 max-w-xl mx-auto">
               Soluciones enfocadas en la simplicidad y la elegancia para optimizar tu presencia digital.
@@ -49,6 +52,17 @@ export default function Services() {
             </motion.div>
           ))}
         </div>
+
+        {/* Sello pequeño al final */}
+        <motion.img
+          src={logo}
+          alt="Sello Entredos Digital"
+          className="w-28 opacity-60 mt-16 mx-auto"
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 0.6, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        />
       </div>
     </section>
   );
