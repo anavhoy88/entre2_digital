@@ -1,6 +1,8 @@
 import { Project, Service } from './types';
 import proyecto1 from './assets/app1.png';
 import proyecto2 from './assets/automatizaciones1.png';
+import proyecto3 from './assets/automatizaciones1.png';
+import proyecto4 from './assets/boda1.png';
 
 export const SERVICES: Service[] = [
   {
@@ -41,7 +43,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 'auto-1',
-    title: 'Control de facturación de casa',
+    title: 'Control de gasto automático',
     category: 'Automatizaciones',
     image: proyecto2,
     description: 'Flujo de trabajo automatizado para el control de facturas de luz, gas y agua.',
@@ -50,18 +52,18 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 'auto-2',
-    title: 'Reportes Automáticos',
+    title: 'Reportes Autom',
     category: 'Automatizaciones',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop',
-    description: 'Generación de informes mensuales de ventas desde Stripe a Google Sheets.',
-    problem: 'Extracción manual de datos tediosa y con riesgo de duplicados.',
-    solution: 'Automatización total que consolida datos financieros cada noche de forma transparente.',
+    image: proyecto3,
+    description: 'A través de Telegram, controla tus gastos en tres click.',
+    problem: 'Pérdida de control de gastos "hormiga".',
+    solution: 'Gestionamos una automatización entre Telegram y Google Sheets para agregar el control diario en tres interacciones.',
   },
   {
     id: 'web-1',
-    title: 'Boda de Ana & Luis',
+    title: 'Boda de Rocío & Carlos',
     category: 'Web',
-    image: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=1000&auto=format&fit=crop',
+    image: proyecto4,
     description: 'Landing page elegante para la gestión de invitados y detalles del evento.',
     problem: 'Dificultad para centralizar confirmaciones de asistencia y alergias alimentarias.',
     solution: 'Web minimalista con formulario integrado y cuenta atrás, facilitando la organización a los novios.',
