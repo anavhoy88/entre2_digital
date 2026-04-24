@@ -1,0 +1,29 @@
+[[redirects]]
+  from = "/*"
+  to = "https://service.prerender.io/https://entredosdigital.netlify.app/:splat"
+  status = 200
+  force = false
+  conditions = {User-Agent = [
+    "Googlebot",
+    "bingbot",
+    "Slurp",
+    "DuckDuckBot",
+    "Baiduspider",
+    "facebookexternalhit",
+    "Twitterbot",
+    "LinkedInBot",
+    "WhatsApp",
+    "SkypeUriPreview",
+    "Discordbot",
+    "TelegramBot",
+    "Applebot",
+    "Perplexity",
+    "GPTBot",
+    "ClaudeBot"
+  ]}
+  headers = {X-Prerender-Token = "Tu_Token_Aqui"}
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
