@@ -4,31 +4,154 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- SEO básico -->
+    <!-- ════════════════════════════════════════
+         SEO BÁSICO
+    ════════════════════════════════════════ -->
     <title>Entredos Digital — Webs, Apps y Automatizaciones para emprendedores</title>
     <meta name="description" content="Soluciones digitales sencillas y elegantes para emprendedores: páginas web, apps personalizadas y automatizaciones con Make. Sin complicaciones técnicas." />
-    <meta name="keywords" content="desarrollo web, aplicaciones, automatizaciones, Make, emprendedores, diseño gráfico" />
+    <!-- NOTA: keywords tiene poco peso en Google moderno, pero no perjudica -->
+    <meta name="keywords" content="desarrollo web, aplicaciones, automatizaciones, Make, emprendedores, diseño gráfico, página web barata, web para autónomos, web para pymes" />
     <meta name="author" content="Entredos Digital" />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
-    <!-- Open Graph (compartir en redes sociales) -->
+    <!-- ════════════════════════════════════════
+         CANONICAL
+         ⚠️ CORRECCIÓN: apuntaba a entredosdigital.com
+         Usa la URL real donde está publicada la web.
+         Cuando tengas dominio propio, actualiza aquí.
+    ════════════════════════════════════════ -->
+    <link rel="canonical" href="https://entredosdigital.netlify.app/" />
+
+    <!-- ════════════════════════════════════════
+         OPEN GRAPH (Facebook, LinkedIn, WhatsApp…)
+         ⚠️ CORRECCIÓN: URL e imagen apuntaban a dominio incorrecto
+    ════════════════════════════════════════ -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://entredosdigital.com/" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:site_name" content="Entredos Digital" />
+    <meta property="og:url" content="https://entredosdigital.netlify.app/" />
     <meta property="og:title" content="Entredos Digital — Soluciones digitales para emprendedores" />
     <meta property="og:description" content="Webs, Apps y Automatizaciones sin complicaciones. Ayudamos a que tu negocio crezca con herramientas digitales elegantes y efectivas." />
-    <meta property="og:image" content="/og-image.jpg" />
+    <meta property="og:image" content="https://entredosdigital.netlify.app/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Entredos Digital — Soluciones digitales para emprendedores" />
 
-    <!-- Twitter Card -->
+    <!-- ════════════════════════════════════════
+         TWITTER / X CARD
+         ⚠️ CORRECCIÓN: imagen apuntaba a ruta relativa
+    ════════════════════════════════════════ -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@entredosdigital" />
     <meta name="twitter:title" content="Entredos Digital — Soluciones digitales para emprendedores" />
-    <meta name="twitter:description" content="Webs, Apps y Automatizaciones sin complicaciones." />
-    <meta name="twitter:image" content="/og-image.jpg" />
+    <meta name="twitter:description" content="Webs, Apps y Automatizaciones sin complicaciones. Ayuda a crecer a tu negocio con herramientas digitales elegantes y efectivas." />
+    <meta name="twitter:image" content="https://entredosdigital.netlify.app/og-image.jpg" />
+    <meta name="twitter:image:alt" content="Entredos Digital — Soluciones digitales para emprendedores" />
 
-    <!-- Canonical -->
-    <link rel="canonical" href="https://entredosdigital.com/" />
+    <!-- ════════════════════════════════════════
+         SCHEMA.ORG — DATOS ESTRUCTURADOS (JSON-LD)
+         Permite a Google, Bing y motores IA entender
+         exactamente qué es tu negocio y qué ofrece.
+    ════════════════════════════════════════ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Entredos Digital",
+      "url": "https://entredosdigital.netlify.app/",
+      "logo": "https://entredosdigital.netlify.app/logo.png",
+      "image": "https://entredosdigital.netlify.app/og-image.jpg",
+      "description": "Soluciones digitales sencillas y elegantes para emprendedores: páginas web, apps personalizadas y automatizaciones con Make.",
+      "inLanguage": "es-ES",
+      "areaServed": {
+        "@type": "Country",
+        "name": "España"
+      },
+      "serviceType": [
+        "Desarrollo web",
+        "Diseño de aplicaciones",
+        "Automatizaciones con Make",
+        "Diseño gráfico"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicios de Entredos Digital",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Páginas web para emprendedores",
+              "description": "Diseño y desarrollo de webs profesionales, sencillas y efectivas para autónomos y pequeños negocios."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Apps personalizadas",
+              "description": "Desarrollo de aplicaciones a medida adaptadas a las necesidades del negocio."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Automatizaciones con Make",
+              "description": "Automatización de procesos y flujos de trabajo para ahorrar tiempo y reducir errores."
+            }
+          }
+        ]
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/entredosdigital",
+        "https://www.instagram.com/entredosdigital"
+      ]
+    }
+    </script>
+
+    <!-- ════════════════════════════════════════
+         PRECONNECT — Mejora el rendimiento
+         (Google lo usa como señal de calidad)
+    ════════════════════════════════════════ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- ════════════════════════════════════════
+         FAVICON — Básico pero necesario
+    ════════════════════════════════════════ -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- ════════════════════════════════════════
+         THEME COLOR — Mejora apariencia en móvil
+         Cambia #0f172a por tu color de marca
+    ════════════════════════════════════════ -->
+    <meta name="theme-color" content="#0f172a" />
+
   </head>
+
   <body>
+    <!-- ════════════════════════════════════════
+         NOSCRIPT: contenido de respaldo para bots
+         que no ejecutan JavaScript (opcional pero útil
+         si tu SPA no tiene SSR/prerendering)
+    ════════════════════════════════════════ -->
+    <noscript>
+      <div style="padding: 2rem; font-family: sans-serif; max-width: 800px; margin: 0 auto;">
+        <h1>Entredos Digital — Soluciones digitales para emprendedores</h1>
+        <p>
+          Ofrecemos <strong>páginas web profesionales</strong>, <strong>apps personalizadas</strong>
+          y <strong>automatizaciones con Make</strong> para autónomos y pequeños negocios en España.
+          Sin complicaciones técnicas, con resultados elegantes y efectivos.
+        </p>
+        <p>Para ver la web completa, activa JavaScript en tu navegador.</p>
+      </div>
+    </noscript>
+
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
+
